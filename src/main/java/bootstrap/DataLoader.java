@@ -1,5 +1,7 @@
 package bootstrap;
 
+import controller.GenericTeamController;
+import controller.GenericTeamRefactorController;
 import controller.TeamController;
 import model.type.RawTypeArrayList;
 import model.type.TypeParameterArrayList;
@@ -16,5 +18,9 @@ public class DataLoader {
         new TypeParameterArrayList().testType();
         separator.print();
         new TeamController().createTeam();
+        separator.print();
+        new GenericTeamController().createTeam();
+        separator.print();
+        new GenericTeamRefactorController().createTeam();
     }
 }
