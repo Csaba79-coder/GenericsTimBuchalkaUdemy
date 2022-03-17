@@ -12,7 +12,7 @@ public class TeamController {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team adelaideCrows = new Team("AdelaideCrows");
+        Team adelaideCrows = new Team("Adelaide Crows");
         adelaideCrows.addPlayer(joe);
         adelaideCrows.addPlayer(pat);
         adelaideCrows.addPlayer(beckham);
