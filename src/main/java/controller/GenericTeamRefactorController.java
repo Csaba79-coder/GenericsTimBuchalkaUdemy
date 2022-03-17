@@ -18,5 +18,11 @@ public class GenericTeamRefactorController {
 
         GenericTeamRefactor<SoccerPlayer> manchesterUnited = new GenericTeamRefactor<>("Manchester United");
         manchesterUnited.addPlayer(beckham);
+
+        GenericTeamRefactor<FootballPlayer> hawthorn = new GenericTeamRefactor<>("Hawthorn");
+        GenericTeamRefactor<FootballPlayer> melbourne = new GenericTeamRefactor<>("Melbourne");
+
+        hawthorn.matchResult(melbourne, 1, 0);
+        hawthorn.matchResult(adelaideCrows, 3, 8);
     }
 }

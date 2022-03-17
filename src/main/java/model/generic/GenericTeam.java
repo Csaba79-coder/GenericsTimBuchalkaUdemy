@@ -33,7 +33,7 @@ public class GenericTeam<T> {
         return this.members.size();
     }
 
-    public void matchResult(Team opponent, int ourScore, int theirScore) {
+    public void matchResult(GenericTeam<T> opponent, int ourScore, int theirScore) {
         if (ourScore > theirScore) {
             won++;
         } else if (ourScore < theirScore) {
