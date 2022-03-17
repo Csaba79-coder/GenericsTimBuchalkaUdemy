@@ -34,15 +34,20 @@ public class GenericTeamRefactor<T extends Player> {
     }
 
     public void matchResult(GenericTeamRefactor<T> opponent, int ourScore, int theirScore) {
+        String message;
         if (ourScore > theirScore) {
             won++;
+            message = " beat ";
         } else if (ourScore < theirScore) {
             lost++;
+            message = " lost to ";
         } else {
             tied++;
+            message = " drew with ";
         }
         played++;
         if (opponent != null) {
+            System.out.println(this.getName() + message + opponent.getName());
             opponent.matchResult(null, theirScore, ourScore);
         }
     }

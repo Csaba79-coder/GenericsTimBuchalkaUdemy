@@ -19,6 +19,8 @@ public class GenericTeamRefactorController {
         GenericTeamRefactor<SoccerPlayer> manchesterUnited = new GenericTeamRefactor<>("Manchester United");
         manchesterUnited.addPlayer(beckham);
 
+        System.out.println("\n");
+
         GenericTeamRefactor<FootballPlayer> hawthorn = new GenericTeamRefactor<>("Hawthorn");
         GenericTeamRefactor<FootballPlayer> melbourne = new GenericTeamRefactor<>("Melbourne");
 
@@ -28,8 +30,8 @@ public class GenericTeamRefactorController {
         int hawthornResult = hawthorn.ranking();
         int melbourneResult = melbourne.ranking();
         int adelaideCrowsResult = adelaideCrows.ranking();
-        System.out.println(hawthorn.getName() + "\' score: " + hawthornResult);
-        System.out.println(melbourne.getName() + " score: " + melbourneResult);
-        System.out.println(adelaideCrows.getName() + " score: " + adelaideCrowsResult);
+        System.out.println(hawthorn.getName() + "\'s score: " + hawthornResult);
+        System.out.println(melbourne.getName() + "\'s score: " + melbourneResult);
+        System.out.println(adelaideCrows.getName() + "\' score: " + adelaideCrowsResult);
     }
 }
