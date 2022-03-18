@@ -33,5 +33,11 @@ public class GenericTeamRefactorController {
         System.out.println(hawthorn.getName() + "\'s score: " + hawthorn.ranking());
         System.out.println(melbourne.getName() + "\'s score: " + melbourne.ranking());
         System.out.println(adelaideCrows.getName() + "\' score: " + adelaideCrows.ranking());
+
+        System.out.println("\n");
+
+        System.out.println(adelaideCrows.compareTo(melbourne));
+        System.out.println(hawthorn.compareTo(adelaideCrows));
+        System.out.println(melbourne.compareTo(hawthorn));
     }
 }
