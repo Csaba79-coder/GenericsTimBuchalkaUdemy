@@ -27,11 +27,11 @@ public class GenericTeamRefactorController {
         hawthorn.matchResult(melbourne, 1, 0);
         hawthorn.matchResult(adelaideCrows, 3, 8);
 
-        int hawthornResult = hawthorn.ranking();
-        int melbourneResult = melbourne.ranking();
-        int adelaideCrowsResult = adelaideCrows.ranking();
-        System.out.println(hawthorn.getName() + "\'s score: " + hawthornResult);
-        System.out.println(melbourne.getName() + "\'s score: " + melbourneResult);
-        System.out.println(adelaideCrows.getName() + "\' score: " + adelaideCrowsResult);
+        // int hawthornResult = hawthorn.ranking();
+        // int melbourneResult = melbourne.ranking();
+        // int adelaideCrowsResult = adelaideCrows.ranking();
+        System.out.println(hawthorn.getName() + "\'s score: " + hawthorn.ranking());
+        System.out.println(melbourne.getName() + "\'s score: " + melbourne.ranking());
+        System.out.println(adelaideCrows.getName() + "\' score: " + adelaideCrows.ranking());
     }
 }
